@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Steak&Brew — стейки на хоспере и бар в Астане</title>
-<meta name="description" content="Steak&Brew, Астана, ул. Шамши Калдаякова 15. Мясо на хоспере, закуски, паста, пиво и коктейли. Бронь стола: 8 701 128 91 34.">
+<meta name="description" content="Steak&Brew, Астана: ул. Шамши Калдаякова 15 и ул. Асфендиярова 8а (БЦ OMEGA). Мясо на хоспере, закуски, паста, пиво и коктейли. Бронь стола: +7 701 830 78 90.">
 <meta name="theme-color" content="#143d2e">
 <link rel="icon" href="img/icon-192.png">
 <link rel="apple-touch-icon" href="img/icon-192.png">
@@ -52,7 +52,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .hdr.solid{background:rgba(244,238,224,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
 .hdr-in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.06em}
-.logo img{width:40px;height:40px;border-radius:4px}
+.logo img{width:40px;height:40px;border-radius:4px;box-shadow:0 0 0 1px rgba(20,61,46,.18)}
 .logo i{font-style:normal;color:var(--ember)}
 .nav{display:flex;gap:6px;align-items:center}
 .nav a{position:relative;padding:10px 14px;text-decoration:none;font-size:15px;font-weight:500}
@@ -166,9 +166,9 @@ section{position:relative}
 .mnav{position:sticky;top:76px;z-index:20;background:rgba(244,238,224,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .mtop{display:flex;gap:14px;align-items:center;padding:12px 0;flex-wrap:wrap}
 .seg{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:4px}
-.seg button{min-height:44px;padding:0 24px;border:0;border-radius:99px;background:none;cursor:pointer;font-weight:600;transition:background .35s var(--ease),color .3s}
+.seg button{min-height:44px;padding:0 18px;border:0;border-radius:99px;background:none;cursor:pointer;font-weight:600;transition:background .35s var(--ease),color .3s}
 .seg button[aria-pressed=true]{background:var(--acc);color:#fff}
-.search{flex:1;min-width:200px;position:relative}
+.search{flex:1;min-width:180px;position:relative}
 .search input{width:100%;min-height:48px;border-radius:99px;border:1px solid var(--line);background:var(--paper);padding:0 18px 0 44px}
 .search input:focus{outline:2px solid var(--acc);outline-offset:1px}
 .search svg{position:absolute;left:16px;top:14px;width:20px;height:20px;color:var(--mute)}
@@ -216,7 +216,7 @@ section{position:relative}
 
 /* подвал */
 .ftr{background:#0e2a1f;color:rgba(255,255,255,.8);padding:56px 0 34px}
-.ftr-g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.ftr-g{display:grid;grid-template-columns:1.3fr .8fr .9fr 1.3fr;gap:32px}
 .ftr h3{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#ffcdb0;margin-bottom:12px;font-weight:600}
 .ftr a{text-decoration:none}.ftr a:hover{color:#fff;text-decoration:underline}
 .ftr p{margin:4px 0}
@@ -271,7 +271,7 @@ section{position:relative}
 <div class="mm" id="mm" role="dialog" aria-modal="true" aria-label="Меню сайта">
   <button class="mm-x" id="mmx" type="button" aria-label="Закрыть меню">×</button>
   <a href="#/">Главная</a><a href="#/menu">Меню</a><a href="#/book">Бронь стола</a><a href="#/contacts">Контакты</a>
-  <a class="btn btn-fire" href="tel:+77011289134">Позвонить 8 701 128 91 34</a>
+  <a class="btn btn-fire" href="tel:+77018307890">Асфендиярова: +7 701 830 78 90</a><a class="btn btn-fire" href="tel:+77011289134">Калдаякова: +7 701 128 91 34</a>
 </div>
 
 <main id="app" tabindex="-1"></main>
@@ -279,9 +279,10 @@ section{position:relative}
 <footer class="ftr">
   <div class="container">
     <div class="ftr-g">
-      <div><a class="logo" href="#/"><img src="img/emblem.png" alt="" width="40" height="40">STEAK<i>&amp;</i>BREW</a><p>Стейки на хоспере, закуски, паста и бар.<br>Астана, ул. Шамши Калдаякова 15.</p></div>
+      <div><a class="logo" href="#/"><img src="img/emblem.png" alt="" width="40" height="40">STEAK<i>&amp;</i>BREW</a><p>Стейки на хоспере, закуски, паста и бар.<br>Две точки в Астане.</p></div>
       <div><h3>Разделы</h3><p><a href="#/menu">Меню</a></p><p><a href="#/book">Бронь стола</a></p><p><a href="#/contacts">Контакты</a></p></div>
-      <div><h3>Связь</h3><p><a href="tel:+77011289134">8 701 128 91 34</a></p><p><a href="https://wa.me/77011289134" target="_blank" rel="noopener">WhatsApp</a></p><p><a href="https://instagram.com/steak.brew_kaldayakov" target="_blank" rel="noopener">@steak.brew_kaldayakov</a></p></div>
+      <div><h3>Связь</h3><p>Асфендиярова 8а<br><a href="tel:+77018307890">+7 701 830 78 90</a></p><p>Калдаякова 15<br><a href="tel:+77011289134">+7 701 128 91 34</a></p></div>
+      <div><h3>Наши точки</h3><p>Вс–Чт 16:00–02:00, Пт–Сб 16:00–04:00</p><p><a href="https://2gis.kz/astana/geo/70000001094978820" target="_blank" rel="noopener">Асфендиярова 8а, БЦ «OMEGA», 4 этаж</a><br><a href="https://www.instagram.com/steak_brew/" target="_blank" rel="noopener">@steak_brew</a></p><p style="margin-top:12px"><a href="https://2gis.kz/astana/geo/70000001118261333" target="_blank" rel="noopener">Шамши Калдаякова 15</a><br><a href="https://www.instagram.com/steak_brew_kaldayakov/" target="_blank" rel="noopener">@steak_brew_kaldayakov</a></p></div>
     </div>
     <div class="ftr-b"><span>© 2026 Steak&amp;Brew. Обслуживание — 10%</span><span>Цены указаны в тенге</span></div>
   </div>
@@ -306,9 +307,19 @@ const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelect
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>new Intl.NumberFormat('ru-RU').format(n).replace(/ /g,' ')+' ₸';
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
-const PHONE='+77011289134', WA='77011289134';
+
+const PLACES=[
+  {id:'asf',tel:'+77018307890',wa:'77018307890',phoneT:'+7 701 830 78 90',title:'Асфендиярова 8а',addr:'ул. Асфендиярова 8а, БЦ «OMEGA», 4 этаж',hours:'Вс–Чт 16:00–02:00, Пт–Сб 16:00–04:00',gis:'https://2gis.kz/astana/geo/70000001094978820',ig:'https://www.instagram.com/steak_brew/',igName:'@steak_brew'},
+  {id:'kal',tel:'+77011289134',wa:'77011289134',phoneT:'+7 701 128 91 34',title:'Шамши Калдаякова 15',hours:'Вс–Чт 16:00–02:00, Пт–Сб 16:00–04:00',addr:'ул. Шамши Калдаякова 15',gis:'https://2gis.kz/astana/geo/70000001118261333',ig:'https://www.instagram.com/steak_brew_kaldayakov/',igName:'@steak_brew_kaldayakov'}
+];
+const placeCards=()=>PLACES.map((p,i)=>`<div class="ct rv" style="--d:${i*.1}s"><span class="eyebrow">${i?'Вторая точка':'Первая точка'}</span><h3>${esc(p.title)}</h3><p style="color:var(--mute)">г. Астана, ${esc(p.addr)}</p>${p.hours?`<p style="margin-top:6px">${esc(p.hours)}</p>`:''}<p style="margin-top:14px"><a href="tel:${p.tel}" style="font-family:var(--serif);font-size:22px">${p.phoneT}</a></p><p style="margin-top:6px"><a href="https://wa.me/${p.wa}" target="_blank" rel="noopener">WhatsApp →</a></p><p style="margin-top:6px"><a href="${p.gis}" target="_blank" rel="noopener">Открыть в 2ГИС →</a></p><p style="margin-top:6px"><a href="${p.ig}" target="_blank" rel="noopener">${esc(p.igName)} →</a></p></div>`).join('');
 const app=$('#app'), hdr=$('#hdr');
-const M=window.MENU, allItems=[...M.kitchen,...M.bar].flatMap(c=>c.items);
+const MENUS=window.MENUS, PL_IDS=['asf','kal'];
+let place='kal';try{const v=localStorage.getItem('sb:place');if(PL_IDS.includes(v))place=v}catch(e){}
+const setPlace=v=>{place=v;try{localStorage.setItem('sb:place',v)}catch(e){}};
+const menuOf=()=>MENUS[place];
+const allItems=[...MENUS.kal.kitchen,...MENUS.kal.bar,...MENUS.asf.kitchen].flatMap(c=>c.items);
+const cnt=(m,k)=>m[k].reduce((a,c)=>a+c.items.length,0);
 const find=n=>allItems.find(i=>i[0]===n)||[n,0,''];
 const vsrc=n=>`<source src="video/${n}.mp4" type="video/mp4"><source src="video/${n}.webm" type="video/webm">`;
 const vid=(n,extra='')=>`<video ${extra} muted loop playsinline preload="metadata" poster="video/${n}.jpg" data-auto>${vsrc(n)}</video>`;
@@ -320,8 +331,8 @@ const catCount=c=>c.items.length;
 function home(){
   const sig=['Рибай на кости','Тибон','Филе Миньон','Пеппер стейк'].map((n,i)=>{const it=find(n);return`<article class="card rv" style="--d:${i*.08}s" data-tilt><span class="no">0${i+1}</span><h3>${esc(it[0])}</h3><p>${esc(it[2])}</p><div class="pr">${money(it[1])}</div></article>`}).join('');
   const sets=['Сет на близкий круг друзей','Сет на большую дружную компанию'].map((n,i)=>{const it=find(n);return`<article class="set rv" style="--d:${i*.1}s"><h3>${esc(it[0])}</h3><p>${esc(it[2])}</p><div class="pr">${money(it[1])}</div></article>`}).join('');
-  const cats=M.kitchen.map(c=>`<a class="cat rv" href="#/menu/${c.id}">${esc(c.title)}<small>${catCount(c)}</small></a>`).join('')+
-            `<a class="cat bar rv" href="#/menu/draft">Бар и напитки<small>${M.bar.reduce((a,c)=>a+c.items.length,0)}</small></a>`;
+  const cats=menuOf().kitchen.map(c=>`<a class="cat rv" href="#/menu/${place}/${c.id}">${esc(c.title)}<small>${catCount(c)}</small></a>`).join('')+
+            `<a class="cat bar rv" href="#/menu/${place}/draft">Бар и напитки<small>${cnt(menuOf(),'bar')}</small></a>`;
   const mq=['Рибай','Тибон','Филе Миньон','Колбаски','Паста','Пиво','Коктейли','Виски','Десерты','Хоспер'].map(x=>`<span>${x}</span>`).join('');
   const pints=['Steak&Brew светлое 0,5 л','Line Brew 0,5 л','Stella Artois 0,5 л'].map(n=>{const it=find(n);return`<div class="pint"><b>${esc(it[0])}</b><span>${money(it[1])}</span></div>`}).join('');
   return`
@@ -329,7 +340,7 @@ function home(){
   <video muted loop playsinline autoplay preload="auto" poster="video/hero.jpg" id="heroV">${vsrc('hero')}</video>
   <canvas id="embers" aria-hidden="true"></canvas>
   <div class="container hero-in">
-    <span class="eyebrow fade-up" style="--d:.5s">Астана · Шамши Калдаякова 15</span>
+    <span class="eyebrow fade-up" style="--d:.5s">Астана · две точки</span>
     <h1 aria-label="Стейки на огне, пиво в бокале">${words('Стейки на',900)}<em>${words('огне,',1100)}</em>${words('пиво в бокале',1250)}</h1>
     <p class="lead fade-up" style="--d:1.9s">Мясо на хоспере, свежие закуски, паста и большой бар. Приходите вечером — столик подготовим заранее.</p>
     <div class="cta fade-up" style="--d:2.1s"><a class="btn btn-fire" data-mag href="#/book">Забронировать стол</a><a class="btn btn-line" data-mag href="#/menu">Смотреть меню</a></div>
@@ -344,8 +355,8 @@ function home(){
     <h2 class="rv">Огонь, соль и хорошее мясо</h2>
     <p class="lead rv" style="--d:.1s">Steak&amp;Brew — место для ужина с друзьями и семьёй: стейки и колбаски на хоспере, закуски к пиву, паста, десерты и бар с коктейлями.</p>
     <div class="facts rv" style="--d:.2s">
-      <div><b>${M.kitchen.reduce((a,c)=>a+c.items.length,0)}+</b><small>блюд в меню</small></div>
-      <div><b>${M.bar.reduce((a,c)=>a+c.items.length,0)}+</b><small>напитков в баре</small></div>
+      <div><b>${Math.min(cnt(MENUS.kal,'kitchen'),cnt(MENUS.asf,'kitchen'))}+</b><small>блюд в меню</small></div>
+      <div><b>${cnt(MENUS.kal,'bar')}+</b><small>напитков в баре</small></div>
       <div><b>10%</b><small>обслуживание</small></div>
     </div>
     <div class="cta rv" style="margin-top:34px;--d:.3s"><a class="btn btn-green" data-mag href="#/contacts">Как нас найти</a></div>
@@ -373,34 +384,39 @@ function home(){
 
 <section class="sec"><div class="container">
   <span class="eyebrow rv">Меню</span><h2 class="rv">Выберите раздел</h2>
+  <div class="cta rv" style="margin-top:22px"><a class="btn btn-green" href="#/menu/asf">Меню: Асфендиярова 8а</a><a class="btn btn-line" style="color:var(--green)" href="#/menu/kal">Меню: Калдаякова 15</a></div>
   <div class="cats">${cats}</div>
 </div></section>
 
 <section class="sec barband"><div class="container grid">
   <div><span class="eyebrow rv">Бар</span><h2 class="rv">Пиво, коктейли и виски</h2>
   <p class="lead rv">Разливное пиво, авторские и классические коктейли, односолодовые виски, настойки и ликёры.</p>
-  <div class="cta rv" style="margin-top:30px"><a class="btn btn-line" data-mag href="#/menu/draft" style="color:#fff">Карта бара</a></div></div>
+  <div class="cta rv" style="margin-top:30px"><a class="btn btn-line" data-mag href="#/menu/${place}/draft" style="color:#fff">Карта бара</a></div></div>
   <div class="pints rv" style="--d:.15s">${pints}</div>
 </div></section>
 
-<section class="sec cta-band"><div class="container">
+<section class="sec" style="padding-bottom:0"><div class="container">
+  <span class="eyebrow rv">Где нас найти</span><h2 class="rv">Две точки в Астане</h2>
+  <div class="places" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:36px">${placeCards()}</div>
+</div></section>
+
+<section class="sec cta-band" style="margin-top:clamp(72px,11vw,140px)"><div class="container">
   <span class="eyebrow rv">Столик на вечер</span><h2 class="rv">Приходите — мы разожжём огонь</h2>
   <p class="lead rv" style="margin:0 auto 32px">Забронируйте стол за минуту или просто позвоните.</p>
-  <div class="cta rv"><a class="btn btn-fire" data-mag href="#/book">Забронировать</a><a class="btn btn-line" data-mag href="tel:${PHONE}">8 701 128 91 34</a></div>
+  <div class="cta rv"><a class="btn btn-fire" data-mag href="#/book">Забронировать</a><a class="btn btn-line" data-mag href="#/contacts">Телефоны точек</a></div>
 </div></section>`;
 }
 
-function menuView(sub){
-  const tab=sub&&M.bar.some(c=>c.id===sub)?'bar':'kitchen';
+function menuView(){
   return`
 <div class="page">
-  <div class="phead" id="mhead" data-theme="${tab==='bar'?'bar':''}"><div class="container">
-    <span class="eyebrow">Steak&amp;Brew</span><h1 id="mtitle">${tab==='bar'?'Бар':'Меню кухни'}</h1>
-    <p id="mnote">${tab==='bar'?'Пиво, коктейли, крепкие напитки и безалкогольные позиции.':'Салаты, супы, закуски, паста, стейки на хоспере и десерты.'} Обслуживание — 10%.</p>
+  <div class="phead" id="mhead"><div class="container">
+    <span class="eyebrow" id="mplace"></span><h1 id="mtitle"></h1><p id="mnote"></p>
   </div></div>
   <div class="mnav" id="mnav"><div class="container">
     <div class="mtop">
-      <div class="seg" role="group" aria-label="Раздел меню"><button type="button" data-t="kitchen" aria-pressed="${tab==='kitchen'}">Кухня</button><button type="button" data-t="bar" aria-pressed="${tab==='bar'}">Бар</button></div>
+      <div class="seg" id="pseg" role="group" aria-label="Точка">${PLACES.map(x=>`<button type="button" data-p="${x.id}">${esc(x.title)}</button>`).join('')}</div>
+      <div class="seg" id="tseg" role="group" aria-label="Раздел меню"><button type="button" data-t="kitchen">Кухня</button><button type="button" data-t="bar">Бар</button></div>
       <div class="search"><label class="sr" for="q">Поиск по меню</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Найти блюдо или напиток" autocomplete="off"></div>
     </div>
     <div class="chips" id="chips" role="list"></div>
@@ -409,17 +425,14 @@ function menuView(sub){
 </div>`;
 }
 function renderMenu(tab,q=''){
-  const data=M[tab],ql=q.trim().toLowerCase();
-  const secs=data.map(c=>{
-    const its=c.items.filter(i=>!ql||(i[0]+' '+(i[2]||'')+' '+c.title).toLowerCase().includes(ql));
-    return {c,its};
-  }).filter(s=>s.its.length);
+  const data=menuOf()[tab],ql=q.trim().toLowerCase();
+  const secs=data.map(c=>({c,its:c.items.filter(i=>!ql||(i[0]+' '+(i[2]||'')+' '+c.title).toLowerCase().includes(ql))})).filter(s=>s.its.length);
   $('#chips').innerHTML=secs.map(s=>`<button class="chip" type="button" role="listitem" data-c="${s.c.id}">${esc(s.c.title)}</button>`).join('');
   $('#mbody').innerHTML=secs.length?secs.map(s=>`<section class="msec" id="c-${s.c.id}" data-id="${s.c.id}"><h2>${s.c.hot?'<span class="fl" aria-hidden="true">🔥</span>':''}${esc(s.c.title)}</h2>${s.c.note?`<p class="note">${esc(s.c.note)}</p>`:''}
     <div class="items">${s.its.map(i=>`<div class="it"><div class="top"><span class="nm">${esc(i[0])}</span><span class="dots"></span><span class="pr">${money(i[1])}</span></div>${i[2]?`<p class="ds">${esc(i[2])}</p>`:''}</div>`).join('')}</div></section>`).join('')
     +`<div class="mfoot"><span>Обслуживание — 10%. Состав и цены уточняйте у официанта.</span><a class="btn btn-fire" href="#/book">Забронировать стол</a></div><div style="height:80px"></div>`
     :`<div class="empty"><p>По запросу «${esc(q)}» ничего не нашлось.</p><button class="btn btn-green" type="button" id="qr">Сбросить поиск</button></div>`;
-  const r=$('#qr');if(r)r.onclick=()=>{$('#q').value='';renderMenu(tab,'')};
+  const r=$('#qr');if(r)r.onclick=()=>{$('#q').value='';menu.q='';renderMenu(tab,'')};
   spy();
 }
 let spyIO;
@@ -429,18 +442,30 @@ function spy(){
     const a=$('.chip[aria-current=true]');if(a)a.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'})}})},{rootMargin:'-30% 0px -60% 0px'});
   $$('.msec').forEach(s=>spyIO.observe(s));
 }
-function mountMenu(sub){
-  let tab=sub&&M.bar.some(c=>c.id===sub)?'bar':'kitchen';
-  renderMenu(tab);
-  const apply=()=>{document.documentElement.dataset.theme=tab==='bar'?'bar':'';$('#mhead').dataset.theme=tab==='bar'?'bar':'';
-    $('#mtitle').textContent=tab==='bar'?'Бар':'Меню кухни';
-    $('#mnote').textContent=(tab==='bar'?'Пиво, коктейли, крепкие напитки и безалкогольные позиции.':'Салаты, супы, закуски, паста, стейки на хоспере и десерты.')+' Обслуживание — 10%.';
-    $$('.seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===tab))};
-  apply();
-  $$('.seg button').forEach(b=>b.onclick=()=>{if(tab===b.dataset.t)return;tab=b.dataset.t;$('#q').value='';apply();renderMenu(tab);scrollTo({top:0,behavior:RM.matches?'auto':'smooth'});observeRv()});
-  $('#q').oninput=e=>renderMenu(tab,e.target.value);
+const menu={tab:'kitchen',q:''};
+function menuParams(){const{sub,sub2}=parse();return PL_IDS.includes(sub)?{mp:sub,cat:sub2}:{mp:null,cat:sub}}
+function menuHead(){
+  const P=PLACES.find(x=>x.id===place),bar=menu.tab==='bar';
+  $('#mplace').textContent=P.title+(P.id==='asf'?' · БЦ «OMEGA», 4 этаж':'');
+  $('#mtitle').textContent=bar?'Бар':'Меню кухни';
+  $('#mnote').textContent=(bar?'Пиво, коктейли, крепкие напитки и безалкогольные позиции.':'Салаты, супы, закуски, горячее и стейки на хоспере.')+' Обслуживание — 10%.'+(P.hours?' '+P.hours+'.':'');
+  document.documentElement.dataset.theme=bar?'bar':'';$('#mhead').dataset.theme=bar?'bar':'';
+  $$('#pseg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===place));
+  $$('#tseg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===menu.tab));
+}
+function menuDraw(){menuHead();renderMenu(menu.tab,menu.q)}
+function menuHash(){
+  const{mp,cat}=menuParams();if(mp)setPlace(mp);
+  menu.q='';$('#q').value='';menu.tab=menuOf().bar.some(c=>c.id===cat)?'bar':'kitchen';menuDraw();
+  const t=cat&&$('#c-'+cat);if(t)setTimeout(()=>t.scrollIntoView({block:'start'}),40);else scrollTo(0,0);
+}
+function mountMenu(){
+  menuHash();
+  $('#pseg').onclick=e=>{const b=e.target.closest('button');if(!b||b.dataset.p===place)return;setPlace(b.dataset.p);menu.q='';$('#q').value='';
+    history.replaceState(null,'','#/menu/'+place);cur='menu/'+place;menuDraw();scrollTo(0,0)};
+  $('#tseg').onclick=e=>{const b=e.target.closest('button');if(!b||b.dataset.t===menu.tab)return;menu.tab=b.dataset.t;menu.q='';$('#q').value='';menuDraw();scrollTo({top:0,behavior:RM.matches?'auto':'smooth'})};
+  $('#q').oninput=e=>{menu.q=e.target.value;renderMenu(menu.tab,menu.q)};
   $('#chips').onclick=e=>{const c=e.target.closest('.chip');if(c){const t=$('#c-'+c.dataset.c);if(t)t.scrollIntoView({behavior:RM.matches?'auto':'smooth',block:'start'})}};
-  if(sub){setTimeout(()=>{const t=$('#c-'+sub);if(t)t.scrollIntoView({block:'start'})},60)}
 }
 
 function bookView(){
@@ -454,18 +479,19 @@ function bookView(){
         <div class="fld"><label for="bn">Ваше имя</label><input id="bn" required maxlength="40" autocomplete="name"><div class="err" id="e-bn" aria-live="polite"></div></div>
         <div class="fld"><label for="bp">Телефон</label><input id="bp" type="tel" inputmode="tel" required placeholder="8 7__ ___ __ __" autocomplete="tel"><div class="err" id="e-bp" aria-live="polite"></div></div>
       </div>
+      <div class="fld"><label for="bl">Точка — бронь уйдёт на её номер</label><select id="bl">${PLACES.map((p,i)=>`<option value="${p.id}" ${p.id===place?'selected':''}>${esc(p.title)}${i===0?' (БЦ «OMEGA», 4 этаж)':''}</option>`).join('')}</select></div>
       <div class="f2">
         <div class="fld"><label for="bd">Дата</label><input id="bd" type="date" required min="${today}" value="${today}"><div class="err" id="e-bd" aria-live="polite"></div></div>
-        <div class="fld"><label for="bt">Время</label><select id="bt">${['12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00'].map(t=>`<option ${t==='19:00'?'selected':''}>${t}</option>`).join('')}</select></div>
+        <div class="fld"><label for="bt">Время</label><select id="bt">${['16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00'].map(t=>`<option ${t==='19:00'?'selected':''}>${t}</option>`).join('')}</select></div>
       </div>
       <div class="fld"><label for="bg">Гостей</label><select id="bg">${Array.from({length:15},(_,i)=>i+1).map(n=>`<option ${n===4?'selected':''}>${n}</option>`).join('')}<option>Больше 15</option></select></div>
       <div class="fld"><label for="bc">Пожелания (необязательно)</label><textarea id="bc" maxlength="200" placeholder="День рождения, детский стул, у окна…"></textarea></div>
-      <button class="btn btn-fire" data-mag type="submit" style="width:100%">Отправить в WhatsApp</button>
-      <div class="ok" id="bok" role="status">Открываем WhatsApp. Если окно не открылось — позвоните нам: <a href="tel:${PHONE}">8 701 128 91 34</a>.</div>
+      <p id="bnum" style="margin:0 0 10px;color:var(--mute)"></p><button class="btn btn-fire" data-mag type="submit" style="width:100%">Отправить в WhatsApp</button>
+      <div class="ok" id="bok" role="status">Открываем WhatsApp. Если окно не открылось — позвоните: <a id="bok-t" href="#"></a>.</div>
     </form>
     <div class="side">
-      <div class="info"><h3>Или позвоните</h3><p><a href="tel:${PHONE}" style="font-size:24px;font-family:var(--serif)">8 701 128 91 34</a></p><p>Астана, ул. Шамши Калдаякова 15</p></div>
-      <div class="info" style="background:var(--red)"><h3>Для компаний</h3><p>Большой стол или банкет? Напишите заранее — подготовим сет и рассадку.</p><p><a href="https://wa.me/${WA}" target="_blank" rel="noopener">Написать в WhatsApp</a></p></div>
+      <div class="info"><h3>Или позвоните</h3>${PLACES.map(x=>`<p>${esc(x.title)}<br><a href="tel:${x.tel}" style="font-size:24px;font-family:var(--serif)">${x.phoneT}</a></p>`).join('')}</div>
+      <div class="info" style="background:var(--red)"><h3>Для компаний</h3><p>Большой стол или банкет? Напишите заранее — подготовим сет и рассадку.</p><p>Напишите в WhatsApp выбранной точки — кнопка в форме.</p></div>
     </div>
   </div>
 </div>`;
@@ -475,6 +501,9 @@ function mountBook(){
   const mask=v=>{let r=String(v).trim(),d=r.replace(/\D/g,'');if(/^\+\s*7/.test(r)||d[0]==='8'||(d.length>10&&d[0]==='7'))d=d.slice(1);d=d.slice(0,10);
     let o=d?'8 ':'';if(d.length)o+=d.slice(0,3);if(d.length>3)o+=' '+d.slice(3,6);if(d.length>6)o+=' '+d.slice(6,8);if(d.length>8)o+=' '+d.slice(8,10);return o};
   bp.addEventListener('input',()=>{bp.value=mask(bp.value)});
+  const cur=()=>PLACES.find(x=>x.id===$('#bl').value);
+  const sync=()=>{const P=cur();$('#bnum').textContent='Заявка уйдёт на WhatsApp '+P.title+': '+P.phoneT;const t=$('#bok-t');t.href='tel:'+P.tel;t.textContent=P.phoneT};
+  $('#bl').addEventListener('change',sync);sync();
   const chk=(el,ok,msg)=>{el.setAttribute('aria-invalid',!ok);$('#e-'+el.id).textContent=ok?'':msg;return ok};
   bn.addEventListener('blur',()=>chk(bn,bn.value.trim().length>1,'Введите имя'));
   bp.addEventListener('blur',()=>chk(bp,bp.value.replace(/\D/g,'').length===11,'Введите номер полностью, 11 цифр'));
@@ -482,21 +511,18 @@ function mountBook(){
     const a=chk(bn,bn.value.trim().length>1,'Введите имя'),b=chk(bp,bp.value.replace(/\D/g,'').length===11,'Введите номер полностью, 11 цифр'),c=chk(bd,!!bd.value,'Выберите дату');
     if(!(a&&b&&c)){(!a?bn:!b?bp:bd).focus();return}
     const d=new Date(bd.value+'T00:00').toLocaleDateString('ru-RU',{day:'numeric',month:'long',weekday:'short'});
-    const msg=`Здравствуйте! Хочу забронировать стол в Steak&Brew.\nИмя: ${bn.value.trim()}\nТелефон: ${bp.value}\nДата: ${d}, ${$('#bt').value}\nГостей: ${$('#bg').value}`+($('#bc').value.trim()?`\nПожелания: ${$('#bc').value.trim()}`:'');
+    const pl=PLACES.find(x=>x.id===$('#bl').value);const msg=`Здравствуйте! Хочу забронировать стол в Steak&Brew.\nТочка: ${pl.addr}\nИмя: ${bn.value.trim()}\nТелефон: ${bp.value}\nДата: ${d}, ${$('#bt').value}\nГостей: ${$('#bg').value}`+($('#bc').value.trim()?`\nПожелания: ${$('#bc').value.trim()}`:'');
     $('#bok').classList.add('show');
-    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank','noopener');
+    window.open('https://wa.me/'+pl.wa+'?text='+encodeURIComponent(msg),'_blank','noopener');
   });
 }
 
 function contactsView(){
-  const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('Steak&Brew Астана Шамши Калдаякова 15');
   return`
 <div class="page">
-  <div class="phead"><div class="container"><span class="eyebrow">Контакты</span><h1>Как нас найти</h1><p>Астана, ул. Шамши Калдаякова 15.</p></div></div>
+  <div class="phead"><div class="container"><span class="eyebrow">Контакты</span><h1>Две точки в Астане</h1><p>Выберите ближайшую и откройте её в 2ГИС.</p></div></div>
   <div class="container contacts">
-    <div class="ct rv"><span class="eyebrow">Адрес</span><h3>ул. Шамши Калдаякова 15</h3><p style="color:var(--mute)">г. Астана</p><p style="margin-top:12px"><a href="${map}" target="_blank" rel="noopener">Открыть на карте →</a></p></div>
-    <div class="ct rv" style="--d:.1s"><span class="eyebrow">Телефон</span><h3>8 701 128 91 34</h3><p style="color:var(--mute)">Бронь и вопросы</p><p style="margin-top:12px"><a href="tel:${PHONE}">Позвонить →</a> &nbsp; <a href="https://wa.me/${WA}" target="_blank" rel="noopener">WhatsApp →</a></p></div>
-    <div class="ct rv" style="--d:.2s"><span class="eyebrow">Instagram</span><h3>@steak.brew_kaldayakov</h3><p style="color:var(--mute)">Новости и акции</p><p style="margin-top:12px"><a href="https://instagram.com/steak.brew_kaldayakov" target="_blank" rel="noopener">Перейти →</a></p></div>
+    ${placeCards()}
   </div>
 </div>`;
 }
@@ -525,12 +551,12 @@ async function runFx(swap){
   await anim(els,s.ym,s.y1,820,'cubic-bezier(.35,0,.25,1)');
   fireOff();
 }
-function parse(){const h=location.hash.replace(/^#\/?/,'');const [r,sub]=h.split('/');return{r:r||'home',sub:sub||''}}
+function parse(){const h=location.hash.replace(/^#\/?/,'');const [r,a,b]=h.split('/');return{r:r||'home',sub:a||'',sub2:b||''}}
 let cur=null;
 function render(){
   const{r,sub}=parse();cur=r+'/'+sub;
   document.documentElement.dataset.theme='';
-  const V={home:()=>[home(),mountHome],menu:()=>[menuView(sub),()=>mountMenu(sub)],book:()=>[bookView(),mountBook],contacts:()=>[contactsView(),()=>{}]};
+  const V={home:()=>[home(),mountHome],menu:()=>[menuView(),mountMenu],book:()=>[bookView(),mountBook],contacts:()=>[contactsView(),()=>{}]};
   const [html,mount]=(V[r]||V.home)();
   app.innerHTML=html;scrollTo(0,0);
   hdr.classList.toggle('solid',r!=='home');
@@ -539,17 +565,12 @@ function render(){
   document.title=({home:'Steak&Brew — стейки на хоспере и бар в Астане',menu:'Меню — Steak&Brew',book:'Бронь стола — Steak&Brew',contacts:'Контакты — Steak&Brew'})[r]||document.title;
   mount();bindUI();observeRv();autoVideos();onScroll();
   if(!first){app.focus({preventScroll:true})}
-  cur=r+'/'+sub;
 }
 async function go(){
-  const{r,sub}=parse(),key=r+'/'+sub;
+  const{r,sub,sub2}=parse(),key=r+'/'+sub+(sub2?'/'+sub2:'');
   if(busy){pending=key;return}
   if(key===cur)return;
-  /* переход внутри меню на другой раздел — без огня, просто прокрутка */
-  if(r==='menu'&&cur&&cur.startsWith('menu')&&$('#mbody')){
-    const bar=M.bar.some(c=>c.id===sub);const isBar=$('.seg button[aria-pressed=true]')?.dataset.t==='bar';
-    if(!sub||bar===isBar){cur=key;const t=$('#c-'+sub);if(t)t.scrollIntoView({behavior:RM.matches?'auto':'smooth',block:'start'});else scrollTo({top:0,behavior:'smooth'});return}
-  }
+  if(r==='menu'&&cur&&cur.startsWith('menu')&&$('#mbody')){cur=key;menuHash();return}
   busy=true;closeMenu();
   await runFx(render);
   busy=false;
