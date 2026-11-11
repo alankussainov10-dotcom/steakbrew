@@ -34,7 +34,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:6px}
 .skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:99999}.skip:focus{left:8px}
 
-/* ---------- кнопки ---------- */
+
 .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 28px;border-radius:99px;border:1.5px solid transparent;font-weight:600;letter-spacing:.02em;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .3s,color .3s}
 .btn::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(120px circle at var(--mx,50%) var(--my,50%),rgba(255,190,120,.55),transparent 70%);opacity:0;transition:opacity .3s}
 .btn:hover::before{opacity:1}
@@ -47,7 +47,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rip .7s ease-out forwards;pointer-events:none;z-index:-1}
 @keyframes rip{to{transform:scale(4);opacity:0}}
 
-/* ---------- шапка ---------- */
 .hdr{position:fixed;inset:0 0 auto 0;z-index:50;color:#fff;transition:background .4s,color .4s,box-shadow .4s,transform .4s var(--ease)}
 .hdr.solid{background:rgba(244,238,224,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
 .hdr-in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
@@ -67,7 +66,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .mm .mm-x{position:absolute;right:14px;top:14px;width:48px;height:48px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer}
 .mm .btn{margin-top:auto;font-family:var(--sans);font-size:16px;border-bottom:0}
 
-/* ---------- герой ---------- */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:#0d1f17;overflow:hidden}
 .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%;transform:scale(1.08);will-change:transform}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,26,19,.55) 0,rgba(10,26,19,.15) 35%,rgba(10,26,19,.78) 100%),radial-gradient(80% 60% at 20% 85%,rgba(142,43,43,.35),transparent 70%)}
@@ -87,13 +85,12 @@ button,input,select,textarea{font:inherit;color:inherit}
 .scroll-hint::after{content:"";width:1px;height:56px;background:linear-gradient(#fff,transparent);animation:sh 2s ease-in-out infinite}
 @keyframes sh{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* ---------- бегущая строка ---------- */
 .marq{background:var(--green);color:var(--sage);overflow:hidden;padding:18px 0;border-block:1px solid rgba(255,255,255,.08)}
 .marq div{display:flex;gap:48px;width:max-content;animation:mq 38s linear infinite;font-family:var(--serif);font-size:22px;white-space:nowrap}
 .marq span::after{content:"✦";margin-left:48px;color:var(--ember);font-size:14px}
 @keyframes mq{to{transform:translateX(-50%)}}
 
-/* ---------- секции ---------- */
+
 section{position:relative}
 .sec{padding:clamp(72px,11vw,140px) 0}
 .sec h2{font-size:clamp(34px,5vw,64px);margin:14px 0 18px}
@@ -152,7 +149,7 @@ section{position:relative}
 .cta-band .cta{justify-content:center}
 .cta-band .btn-line{color:var(--green)}.cta-band .btn-line:hover{background:rgba(20,61,46,.08)}
 
-/* ---------- страницы ---------- */
+
 .page{padding-top:76px;min-height:100svh}
 .phead{position:relative;background:var(--green);color:#fff;padding:clamp(56px,9vw,110px) 0 clamp(40px,6vw,70px);overflow:hidden}
 .phead[data-theme=bar]{background:var(--red)}
@@ -162,7 +159,7 @@ section{position:relative}
 .phead::after{content:"";position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(224,89,42,.45),transparent 70%);animation:glow 6s ease-in-out infinite alternate}
 @keyframes glow{to{transform:scale(1.25);opacity:.7}}
 
-/* меню */
+
 .mnav{position:sticky;top:76px;z-index:20;background:rgba(244,238,224,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .mtop{display:flex;gap:14px;align-items:center;padding:12px 0;flex-wrap:wrap}
 .seg{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:4px}
@@ -194,7 +191,7 @@ section{position:relative}
 .empty{padding:70px 0;text-align:center;color:var(--mute)}
 .empty .btn{margin-top:18px}
 
-/* форма */
+
 .formwrap{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,5vw,70px);padding:clamp(48px,7vw,90px) 0;align-items:start}
 .form{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,40px)}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -214,7 +211,7 @@ section{position:relative}
 .ct{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px}
 .ct h3{font-size:22px;margin:12px 0 8px}.ct a{font-weight:600;color:var(--green)}
 
-/* подвал */
+
 .ftr{background:#0e2a1f;color:rgba(255,255,255,.8);padding:56px 0 34px}
 .ftr-g{display:grid;grid-template-columns:1.3fr .8fr .9fr 1.3fr;gap:32px}
 .ftr h3{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#ffcdb0;margin-bottom:12px;font-weight:600}
@@ -223,7 +220,6 @@ section{position:relative}
 .ftr .logo{color:#fff;margin-bottom:12px}
 .ftr-b{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.55)}
 
-/* ---------- огненный переход ---------- */
 .fx-fill,.fx-fire,.fx-logo{position:fixed;left:0;width:100%;pointer-events:none;display:none}
 .fx-fill{top:0;z-index:9990;will-change:transform;background:
   linear-gradient(to bottom,rgba(120,30,10,0) 0,rgba(110,28,12,.85) 5vh,#3a130a 11vh,#16261d 30vh,#0c1f17 100vh,#0c1f17 135vh,rgba(12,31,23,0) 100%)}
@@ -288,7 +284,7 @@ section{position:relative}
   </div>
 </footer>
 
-<!-- огненный переход -->
+
 <div class="fx" id="fx" aria-hidden="true">
   <div class="fx-fill" id="fxFill"></div>
   <video class="fx-fire" id="fxFire" muted loop playsinline preload="auto" tabindex="-1">
@@ -324,7 +320,7 @@ const find=n=>allItems.find(i=>i[0]===n)||[n,0,''];
 const vsrc=n=>`<source src="video/${n}.mp4" type="video/mp4"><source src="video/${n}.webm" type="video/webm">`;
 const vid=(n,extra='')=>`<video ${extra} muted loop playsinline preload="metadata" poster="video/${n}.jpg" data-auto>${vsrc(n)}</video>`;
 
-/* ================= ВИДЫ ================= */
+
 function words(t,d=0){return t.split(' ').map((w,i)=>`<span class="w"><b style="--i:${i};--d:${d}ms">${w}</b></span>`).join('')}
 const catCount=c=>c.items.length;
 
@@ -578,7 +574,7 @@ async function go(){
 }
 addEventListener('hashchange',go);
 
-/* ================= ЭФФЕКТЫ ================= */
+
 let io;
 function observeRv(){
   if(io)io.disconnect();
@@ -592,7 +588,7 @@ function autoVideos(){
   $$('video[data-auto],#heroV').forEach(v=>vio.observe(v));
 }
 function bindUI(){
-  /* магнитные кнопки + блик + ripple */
+
   $$('.btn').forEach(b=>{
     b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.setProperty('--mx',(e.clientX-r.left)+'px');b.style.setProperty('--my',(e.clientY-r.top)+'px');
       if(b.hasAttribute('data-mag')&&e.pointerType==='mouse'&&!RM.matches){b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.28}px)`}});
@@ -600,14 +596,14 @@ function bindUI(){
     b.addEventListener('pointerdown',e=>{if(RM.matches)return;const r=b.getBoundingClientRect(),s=Math.max(r.width,r.height)/2,d=document.createElement('i');d.className='ripple';
       d.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;b.appendChild(d);setTimeout(()=>d.remove(),700)});
   });
-  /* наклон карточек */
+
   $$('[data-tilt]').forEach(c=>{
     c.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||RM.matches)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
       c.style.transform=`perspective(900px) rotateX(${-y*6}deg) rotateY(${x*8}deg) translateY(-6px)`});
     c.addEventListener('pointerleave',()=>{c.style.transform=''});
   });
 }
-/* прокрутка: шапка, параллакс */
+
 let tick=false;
 function onScroll(){
   const y=scrollY,home=cur?cur.startsWith('home'):parse().r==='home';
@@ -621,7 +617,7 @@ function onScroll(){
 addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
 addEventListener('resize',()=>{if(fxEl.classList.contains('on'))fxSize()});
 
-/* искры в герое */
+
 function mountHome(){
   const cv=$('#embers');if(!cv||RM.matches)return;
   const ctx=cv.getContext('2d');let W,H,P=[],run=true,raf;
@@ -638,7 +634,6 @@ function mountHome(){
   loop();
 }
 
-/* мобильное меню */
 const mm=$('#mm'),burger=$('#burger');
 function closeMenu(){mm.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}
 burger.onclick=()=>{mm.classList.add('open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';$('#mmx').focus()};
@@ -646,7 +641,7 @@ $('#mmx').onclick=closeMenu;
 addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 $$('#mm a').forEach(a=>a.addEventListener('click',()=>{if(a.getAttribute('href')===location.hash||(a.getAttribute('href')==='#/'&&!location.hash))closeMenu()}));
 
-/* ================= СТАРТ: огненное открытие ================= */
+
 (async function start(){
   const done=()=>{first=false};
   if(RM.matches){render();done();return}
