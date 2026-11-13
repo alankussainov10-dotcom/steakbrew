@@ -9,7 +9,7 @@
 <link rel="icon" href="img/icon-192.png">
 <link rel="apple-touch-icon" href="img/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --cream:#f4eee0;--paper:#fbf7ee;--ink:#1d2a24;--mute:#66726b;--line:#dcd3bf;
@@ -43,6 +43,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .btn-fire:hover{background:var(--red2);box-shadow:0 16px 36px -12px rgba(224,89,42,.8)}
 .btn-line{border-color:currentColor;background:transparent}
 .btn-line:hover{background:rgba(255,255,255,.12)}
+.btn-gold{background:#e3a73a;color:#14110a}.btn-gold:hover{background:#efb94f}
 .btn-green{background:var(--green);color:#fff}.btn-green:hover{background:var(--green2)}
 .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rip .7s ease-out forwards;pointer-events:none;z-index:-1}
 @keyframes rip{to{transform:scale(4);opacity:0}}
@@ -261,6 +262,35 @@ section{position:relative}
   .hdr-in{gap:8px}.hdr .lang button{min-width:28px;height:30px;padding:0 3px;font-size:10.5px}.hdr .lang{padding:2px}
 }
 @media(max-width:380px){.logo{font-size:13px;gap:6px;letter-spacing:.01em}.logo img{width:28px;height:28px}.hdr .lang button{min-width:24px;padding:0 2px;font-size:10px}.hdr-in{gap:4px}}
+/* ---------- акции ---------- */
+.promos{display:grid;gap:clamp(18px,3vw,32px);padding:clamp(28px,5vw,60px) 0 clamp(60px,9vw,110px)}
+.pcard{position:relative;isolation:isolate;overflow:hidden;border-radius:28px;min-height:clamp(520px,82svh,760px);display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding:clamp(22px,4vw,48px);color:#fff;background:#0f241b;box-shadow:0 40px 70px -40px rgba(10,26,19,.8)}
+.pcard>video,.pcard>.pbg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.6s var(--ease)}
+.pcard.in>video,.pcard.in>.pbg{transform:scale(1)}
+.pcard::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,20,15,.35) 0,rgba(8,20,15,.05) 38%,rgba(8,20,15,.88) 100%)}
+.pbg{background:radial-gradient(900px 500px at 85% 10%,rgba(224,89,42,.35),transparent 60%),radial-gradient(700px 500px at 0% 100%,rgba(31,90,67,.9),transparent 65%),#0f241b}
+.plbl{align-self:flex-start;background:#e3a73a;color:#14110a;padding:14px 22px 12px;border-radius:6px;font-family:Oswald,"Arial Narrow",Impact,"PingFang SC","Microsoft YaHei",sans-serif;text-transform:uppercase;line-height:1;clip-path:inset(0 100% 0 0);transition:clip-path .9s var(--ease) .15s}
+.pcard.in .plbl{clip-path:inset(0 0 0 0)}
+.plbl small{display:block;font-size:clamp(13px,1.6vw,17px);font-weight:600;letter-spacing:.06em;margin-bottom:6px}
+.plbl b{display:block;font-size:clamp(28px,5vw,54px);font-weight:700;letter-spacing:.01em}
+.pbody{max-width:720px}
+.pbody h2{font-family:Oswald,"Arial Narrow",Impact,"PingFang SC","Microsoft YaHei",sans-serif;text-transform:uppercase;font-weight:700;font-size:clamp(40px,8.4vw,104px);line-height:.95;letter-spacing:.005em;margin:0 0 18px}
+.pbody h2 span{display:block;overflow:hidden}
+.pbody h2 span i{display:inline-block;font-style:normal;transform:translateY(105%);transition:transform .9s var(--ease)}
+.pbody h2 span i.g{color:#e3a73a}
+.pcard.in .pbody h2 span i{transform:none}
+.pbody h2 span:nth-child(2) i{transition-delay:.12s}.pbody h2 span:nth-child(3) i{transition-delay:.24s}.pbody h2 span:nth-child(4) i{transition-delay:.36s}
+.pbody p{font-size:clamp(15px,1.7vw,18px);line-height:1.55;color:rgba(255,255,255,.88);max-width:560px;opacity:0;transform:translateY(14px);transition:opacity .8s .5s,transform .8s var(--ease) .5s}
+.pcard.in .pbody p,.pcard.in .pact{opacity:1;transform:none}
+.pbody .rule{width:90px;height:3px;background:#e3a73a;margin:0 0 18px;transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease) .45s}
+.pcard.in .rule{transform:none}
+.pact{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:26px;opacity:0;transform:translateY(14px);transition:opacity .8s .65s,transform .8s var(--ease) .65s}
+.pact em{font-style:normal;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.zhk{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.zhk li{padding:8px 16px;border:1.5px solid rgba(227,167,58,.8);border-radius:99px;font-weight:600;font-size:15px;color:#fff;background:rgba(10,26,19,.35)}
+.pnote{margin-top:18px!important;padding:14px 18px;border-left:3px solid #e3a73a;background:rgba(10,26,19,.5);border-radius:0 10px 10px 0;color:#fff!important}
+html[lang=zh] .pbody h2{line-height:1.1}
+#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60}
 @media(max-width:340px){.logo{font-size:0;gap:0}}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
@@ -276,7 +306,7 @@ section{position:relative}
   <div class="container hdr-in">
     <a class="logo" href="#/" data-i18n-aria="aria_home" aria-label="Steak&Brew — на главную"><img src="img/emblem.png" alt="" width="40" height="40">STEAK<i>&amp;</i>BREW</a>
     <nav class="nav" data-i18n-aria="aria_nav" aria-label="Основная навигация">
-      <a href="#/" data-i18n="nav_home">Главная</a><a href="#/menu" data-i18n="nav_menu">Меню</a><a href="#/book" data-i18n="nav_book">Бронь</a><a href="#/contacts" data-i18n="nav_contacts">Контакты</a>
+      <a href="#/" data-i18n="nav_home">Главная</a><a href="#/menu" data-i18n="nav_menu">Меню</a><a href="#/promo" data-i18n="nav_promo">Акции</a><a href="#/book" data-i18n="nav_book">Бронь</a><a href="#/contacts" data-i18n="nav_contacts">Контакты</a>
     </nav>
     <div class="lang" role="group" data-i18n-aria="aria_lang" aria-label="Язык"></div>
     <a class="btn btn-fire" data-mag href="#/book" data-i18n="btn_book">Забронировать</a>
@@ -285,7 +315,7 @@ section{position:relative}
 </header>
 <div class="mm" id="mm" role="dialog" aria-modal="true" data-i18n-aria="aria_site" aria-label="Меню сайта">
   <button class="mm-x" id="mmx" type="button" data-i18n-aria="aria_close" aria-label="Закрыть меню">×</button>
-  <a href="#/" data-i18n="nav_home">Главная</a><a href="#/menu" data-i18n="nav_menu">Меню</a><a href="#/book" data-i18n="mm_book">Бронь стола</a><a href="#/contacts" data-i18n="nav_contacts">Контакты</a>
+  <a href="#/" data-i18n="nav_home">Главная</a><a href="#/menu" data-i18n="nav_menu">Меню</a><a href="#/promo" data-i18n="nav_promo">Акции</a><a href="#/book" data-i18n="mm_book">Бронь стола</a><a href="#/contacts" data-i18n="nav_contacts">Контакты</a>
   <div class="lang" role="group" data-i18n-aria="aria_lang" aria-label="Язык"></div>
   <div id="mmcalls"></div>
 </div>
@@ -366,7 +396,7 @@ function home(){
     <span class="eyebrow fade-up" style="--d:.5s">${t('h_eyebrow')}</span>
     <h1 aria-label="${esc(t('h1a')+' '+t('h1b')+' '+t('h1c'))}">${words(esc(t('h1a')),900)}<em>${words(esc(t('h1b')),1100)}</em>${words(esc(t('h1c')),1250)}</h1>
     <p class="lead fade-up" style="--d:1.9s">${t('h_lead')}</p>
-    <div class="cta fade-up" style="--d:2.1s"><a class="btn btn-fire" data-mag href="#/book">${t('h_book')}</a><a class="btn btn-line" data-mag href="#/menu">${t('h_viewmenu')}</a></div>
+    <div class="cta fade-up" style="--d:2.1s"><a class="btn btn-fire" data-mag href="#/book">${t('h_book')}</a><a class="btn btn-line" data-mag href="#/menu">${t('h_viewmenu')}</a><a class="btn btn-gold" data-mag href="#/promo">${t('promo_btn_home')}</a></div>
   </div>
   <span class="scroll-hint">${t('h_scroll')}</span>
 </section>
@@ -385,8 +415,8 @@ function home(){
     <div class="cta rv" style="margin-top:34px;--d:.3s"><a class="btn btn-green" data-mag href="#/contacts">${t('how_find')}</a></div>
   </div>
   <div class="vids">
-    <div class="vid rv" data-par="-.05">${vid('raw')}<span>${t('vid1')}</span></div>
-    <div class="vid rv" data-par=".05" style="--d:.15s">${vid('plate')}<span>${t('vid2')}</span></div>
+    <div class="vid rv" data-par="-.05">${vid('raw')}</div>
+    <div class="vid rv" data-par=".05" style="--d:.15s">${vid('plate')}</div>
   </div>
 </div></section>
 
@@ -407,7 +437,7 @@ function home(){
 
 <section class="sec"><div class="container">
   <span class="eyebrow rv">${t('menu_e')}</span><h2 class="rv">${t('menu_h')}</h2>
-  <div class="cta rv" style="margin-top:22px"><a class="btn btn-green" href="#/menu/asf">${esc(t('menu_of',ptitle(PLACES[0])))}</a><a class="btn btn-line" style="color:var(--green)" href="#/menu/kal">${esc(t('menu_of',ptitle(PLACES[1])))}</a></div>
+  <div class="cta rv" style="margin-top:22px"><a class="btn btn-green" href="#/menu/asf">${esc(t('menu_of',ptitle(PLACES[0])))}</a><a class="btn btn-line" style="color:var(--green)" href="#/menu/kal">${esc(t('menu_of',ptitle(PLACES[1])))}</a><a class="btn btn-gold" href="#/promo">${t('promo_btn_home')}</a></div>
   <div class="cats">${cats}</div>
 </div></section>
 
@@ -543,6 +573,27 @@ function mountBook(){
   });
 }
 
+function promoView(){
+  const split=h=>{const w=h.split(' ');if(w.length<2)return`<span><i class="g">${esc(h)}</i></span>`;
+    const k=w.length>3?2:1,a=w.slice(0,k).join(' '),b=w.slice(k).join(' ');
+    const lines=w.length>3?[w.slice(0,2).join(' '),w.slice(2,4).join(' '),w.slice(4).join(' ')].filter(Boolean):[a,b];
+    return lines.map((l,i)=>`<span><i${i===1?' class="g"':''}>${esc(l)}</i></span>`).join('')};
+  const card=(n,media,extra='')=>`<article class="pcard rv" id="p${n}">${media}
+    <div class="plbl"><small>${esc(t('pr'+n+'_day'))}</small><b>${esc(t('pr'+n+'_off'))}</b></div>
+    <div class="pbody"><h2>${split(t('pr'+n+'_h'))}</h2><div class="rule"></div><p>${esc(t('pr'+n+'_t'))}</p>${extra}
+      <div class="pact"><a class="btn btn-gold" data-mag href="#/book">${t('pr_book')}</a><em>${t('pr_both')}</em></div></div></article>`;
+  const zhk=['Isma','Kemenger','Сұлу','Hayat','Жетиген','Premier Palace','Stockholm','Bravo','Айдидар'];
+  return`
+<div class="page">
+  <div class="phead"><div class="container"><span class="eyebrow">${t('pr_e')}</span><h1>${t('pr_h')}</h1><p>${t('pr_l')}</p></div></div>
+  <div class="container promos">
+    ${card(1,vid('promo-steak'))}
+    ${card(2,vid('promo-cocktail'))}
+    ${card(3,vid('promo-bday'))}
+    ${card(4,'<div class="pbg"></div>',`<ul class="zhk">${zhk.map(z=>`<li>${esc(z)}</li>`).join('')}</ul><p class="pnote">${esc(t('pr4_n'))}</p>`)}
+  </div>
+</div>`;
+}
 function contactsView(){
   return`
 <div class="page">
@@ -579,7 +630,7 @@ async function runFx(swap){
 }
 function parse(){const h=location.hash.replace(/^#\/?/,'');const [r,a,b]=h.split('/');return{r:r||'home',sub:a||'',sub2:b||''}}
 let cur=null;
-const V={home:()=>[home(),mountHome],menu:()=>[menuView(),mountMenu],book:()=>[bookView(),mountBook],contacts:()=>[contactsView(),()=>{}]};
+const V={home:()=>[home(),mountHome],menu:()=>[menuView(),mountMenu],book:()=>[bookView(),mountBook],contacts:()=>[contactsView(),()=>{}],promo:()=>[promoView(),()=>{}]};
 function setTitle(){const{r}=parse();document.title=t('title_'+(V[r]?r:'home'));const m=$('meta[name=description]');if(m)m.content=t('meta')}
 function render(){
   const{r,sub}=parse();cur=r+'/'+sub;
@@ -665,6 +716,23 @@ function mountHome(){
   loop();
 }
 
+/* ================= СНЕГ ================= */
+(function snow(){
+  const cv=document.createElement('canvas');cv.id='snow';cv.setAttribute('aria-hidden','true');document.body.appendChild(cv);
+  const x=cv.getContext('2d');let W,H,D,fl=[],raf=0,last=0;
+  const mk=(init)=>({x:Math.random()*W,y:init?Math.random()*H:-10,r:Math.random()*2.4+.8,v:Math.random()*.7+.35,s:Math.random()*Math.PI*2,w:Math.random()*.6+.2,a:Math.random()*.4+.5});
+  const size=()=>{D=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);const n=Math.round(Math.min(90,Math.max(28,W/16)));while(fl.length<n)fl.push(mk(true));fl.length=n};
+  const draw=(t)=>{raf=requestAnimationFrame(draw);const dt=Math.min((t-last)/16.7||1,3);last=t;x.clearRect(0,0,W,H);
+    for(const f of fl){f.y+=f.v*dt;f.s+=.012*dt;f.x+=Math.sin(f.s)*f.w*dt;if(f.y>H+10||f.x<-20||f.x>W+20){Object.assign(f,mk(false))}
+      x.beginPath();x.arc(f.x,f.y,f.r,0,6.283);x.fillStyle='rgba(255,255,255,'+f.a+')';x.shadowColor='rgba(70,100,120,.45)';x.shadowBlur=3;x.fill()}};
+  const start=()=>{if(!raf&&!RM.matches){last=performance.now();raf=requestAnimationFrame(draw)}};
+  const stop=()=>{cancelAnimationFrame(raf);raf=0};
+  size();addEventListener('resize',size);
+  document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
+  RM.addEventListener&&RM.addEventListener('change',()=>RM.matches?(stop(),x.clearRect(0,0,W,H)):start());
+  start();
+})();
+
 /* ================= ЯЗЫК ================= */
 const LBL={ru:'RU',kk:'ҚАЗ',en:'EN',zh:'中文'};
 $$('.lang').forEach(l=>{l.innerHTML=LANGS.map(c=>`<button type="button" data-l="${c}" lang="${c}">${LBL[c]}</button>`).join('')});
@@ -675,7 +743,7 @@ function applyStatic(){
   $$('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang));
   $('#mmcalls').innerHTML=PLACES.map(p=>`<a class="btn btn-fire" href="tel:${p.tel}">${esc(t('call_prefix',ptitle(p),p.phoneT))}</a>`).join('');
   $('#ftrg').innerHTML=`<div><a class="logo" href="#/"><img src="img/emblem.png" alt="" width="40" height="40">STEAK<i>&amp;</i>BREW</a><p>${t('ftr_t1')}<br>${t('ftr_t2')}</p></div>
-      <div><h3>${t('ftr_sections')}</h3><p><a href="#/menu">${t('nav_menu')}</a></p><p><a href="#/book">${t('mm_book')}</a></p><p><a href="#/contacts">${t('nav_contacts')}</a></p></div>
+      <div><h3>${t('ftr_sections')}</h3><p><a href="#/menu">${t('nav_menu')}</a></p><p><a href="#/promo">${t('nav_promo')}</a></p><p><a href="#/book">${t('mm_book')}</a></p><p><a href="#/contacts">${t('nav_contacts')}</a></p></div>
       <div><h3>${t('ftr_contact')}</h3>${PLACES.map(p=>`<p>${esc(ptitle(p))}<br><a href="tel:${p.tel}">${p.phoneT}</a></p>`).join('')}</div>
       <div><h3>${t('ftr_places')}</h3><p>${t('hours')}</p>${PLACES.map((p,i)=>`<p${i?' style="margin-top:12px"':''}><a href="${p.gis}" target="_blank" rel="noopener">${esc(ptitle(p))}${p.id==='asf'?esc(t('p_asf_x')):''}</a><br><a href="${p.ig}" target="_blank" rel="noopener">${p.igName}</a></p>`).join('')}</div>`;
   $('#ftrb').innerHTML=`<span>${t('ftr_fee')}</span><span>${t('ftr_cur')}</span>`;
