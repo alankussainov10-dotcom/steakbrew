@@ -1,7 +1,4 @@
-/* Переводы сайта Steak&Brew. Языки: ru, kk (қазақша), en, zh (中文).
-   UI: ключ -> [ru, kk, en, zh]. Меню: русское название -> [kk, en, zh].
-   Добавили блюдо в menu.js — допишите его перевод в NAMES (и DESCS, если есть описание),
-   иначе на других языках оно покажется по-русски. */
+
 window.I18N = {
 LANGS: ['ru', 'kk', 'en', 'zh'],
 LOCALE: { ru: 'ru-RU', kk: 'kk-KZ', en: 'en-US', zh: 'zh-CN' },
@@ -47,7 +44,7 @@ UI: {
     'Steak&Brew, Astana: 15 Shamshi Kaldayakov St. and 8a Asfendiyarov St. (OMEGA Business Center). Josper-grilled meat, starters, pasta, beer and cocktails. Book a table online.',
     'Steak&Brew，阿斯塔纳：沙姆希·卡尔达亚科夫街 15 号和阿斯芬迪亚罗夫街 8a 号（OMEGA 商务中心）。Josper 炭烤肉类、前菜、意面、啤酒与鸡尾酒。在线订座。'
   ],
-  /* акции */
+
   nav_promo: ['Акции', 'Акциялар', 'Offers', '优惠'],
   title_promo: ['Акции — Steak&Brew', 'Акциялар — Steak&Brew', 'Offers — Steak&Brew', '优惠活动 — Steak&Brew'],
   promo_btn_home: ['Акции', 'Акциялар', 'Offers', '优惠活动'],
@@ -73,7 +70,7 @@ UI: {
   pr4_n: ['Обязательно просим показать чат соседей — только потом высчитаем процент.', 'Көршілер чатын көрсетуді өтінеміз — содан кейін ғана пайызды есептейміз.', "Please show your neighbours' chat — only then will we calculate the discount.", '请出示邻居群聊——确认后才会计算折扣。'],
   pr_book: ['Забронировать стол', 'Үстел брондау', 'Book a table', '预订餐桌'],
   pr_both: ['На обеих точках', 'Екі нүктеде де', 'At both locations', '两家门店通用'],
-  /* главная */
+
   h_eyebrow: ['Астана · две точки', 'Астана · екі нүкте', 'Astana · two locations', '阿斯塔纳 · 两家门店'],
   h1a: ['Стейки на', 'Стейктер', 'Steaks', '炭火'],
   h1b: ['огне,', 'отта,', 'on fire,', '牛排，'],
@@ -117,7 +114,7 @@ UI: {
   cta_h: ['Приходите — мы разожжём огонь', 'Келіңіздер — біз отты жағамыз', "Come by — we'll light the fire", '欢迎光临，我们为您生起炭火'],
   cta_l: ['Забронируйте стол за минуту или просто позвоните.', 'Үстелді бір минутта брондаңыз немесе жай ғана қоңырау шалыңыз.', 'Book a table in a minute or just give us a call.', '一分钟即可订座，或直接来电。'],
   cta_ph: ['Телефоны точек', 'Нүктелердің телефондары', 'Phone numbers', '门店电话'],
-  /* меню */
+
   aria_pt: ['Точка', 'Нүкте', 'Location', '门店'],
   aria_sec: ['Раздел меню', 'Мәзір бөлімі', 'Menu section', '菜单分类'],
   kitchen: ['Кухня', 'Ас үй', 'Kitchen', '厨房'],
@@ -132,7 +129,7 @@ UI: {
   mfoot: ['Обслуживание — 10%. Состав и цены уточняйте у официанта.', 'Қызмет көрсету — 10%. Құрамы мен бағасын даяшыдан нақтылаңыз.', 'Service charge — 10%. Please check ingredients and prices with your waiter.', '服务费 10%。配料与价格请向服务员确认。'],
   empty: ['По запросу «{0}» ничего не нашлось.', '«{0}» сұранысы бойынша ештеңе табылмады.', 'Nothing found for “{0}”.', '未找到与“{0}”相关的内容。'],
   reset: ['Сбросить поиск', 'Іздеуді тазалау', 'Clear search', '清除搜索'],
-  /* бронь */
+
   b_e: ['Бронь', 'Брондау', 'Booking', '订座'],
   b_h: ['Забронировать стол', 'Үстел брондау', 'Book a table', '预订餐桌'],
   b_l: ['Оставьте данные — откроется WhatsApp с готовым сообщением для администратора. Или позвоните.', 'Деректерді қалдырыңыз — әкімшіге арналған дайын хабарламамен WhatsApp ашылады. Немесе қоңырау шалыңыз.', 'Leave your details and WhatsApp will open with a ready message for the manager. Or give us a call.', '请填写信息，WhatsApp 将打开并带有发给店长的现成消息。也可以直接来电。'],
@@ -155,11 +152,11 @@ UI: {
   e_name: ['Введите имя', 'Атыңызды енгізіңіз', 'Enter your name', '请输入姓名'],
   e_phone: ['Введите номер полностью, 11 цифр', 'Нөмірді толық енгізіңіз, 11 сан', 'Enter the full number, 11 digits', '请输入完整号码，共 11 位数字'],
   e_date: ['Выберите дату', 'Күнді таңдаңыз', 'Choose a date', '请选择日期'],
-  /* контакты */
+
   c_e: ['Контакты', 'Байланыс', 'Contacts', '联系我们'],
   c_l: ['Выберите ближайшую и откройте её в 2ГИС.', 'Жақынын таңдап, 2ГИС-те ашыңыз.', 'Choose the nearest one and open it in 2GIS.', '请选择最近的门店并在 2GIS 中打开。']
 },
-/* категории меню: id -> [kk, en, zh] */
+
 CATS: {
   salads: ['Салаттар', 'Salads', '沙拉'],
   soups: ['Сорпалар', 'Soups', '汤品'],
